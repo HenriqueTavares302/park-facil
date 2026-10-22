@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Estacionamento Park Fácil</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Park Fácil</h1>
+        <form action="calcular.php" method="post">
+            <div class="campo">
+                <label for="horas">Horas:</label>
+                <input type="number" id="horas" name="horas" min="1" required>
+            </div>
+
+            <div class="campo">
+                <label>Veículo:</label>
+                <div class="opcao">
+                    <input type="radio" id="carro" name="veiculo" value="0" checked>
+                    <label for="carro">Carro</label>
+                </div>
+                <div class="opcao">
+                    <input type="radio" id="moto" name="veiculo" value="1">
+                    <label for="moto">Moto</label>
+                </div>
+            </div>
+
+            <div class="campo-check">
+                <input type="checkbox" id="lavagem" name="lavagem" value="sim">
+                <label for="lavagem">Lavagem</label>
+            </div>
+
+            <button type="submit">Calcular</button>
+            <br>
+            <br>
+            <button type="reset">Limpar</button>
+        </form>
+    </div>
+</body>
+</html>
